@@ -11,8 +11,11 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *categoryTable;
-
+@property (weak, nonatomic) IBOutlet UITextView *receiptDescription;
+@property (weak, nonatomic) IBOutlet UIDatePicker *receiptDate;
+@property (weak, nonatomic) IBOutlet UITextField *receiptName;
 @property (strong, nonatomic) NSArray *categories;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 
 @end
 
@@ -41,6 +44,14 @@
     return self.categories.count;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([tableView cellForRowAtIndexPath:indexPath].accessoryType == UITableViewCellAccessoryNone) {
+    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
+    }
+}
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     cell.userInteractionEnabled = YES;
@@ -48,7 +59,19 @@
     return cell;
 }
 - (IBAction)addReceipt:(UIButton *)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    if(self.receiptName != nil) {
+        self.receiptName.text = self.receipt.receiptName;
+        self.receiptDescription.text = self.receipt.receiptDescription;
+//        self.receiptDate.date = self.receipt.timeStamp;
+        
+        [self dismissViewControllerAnimated:YES completion:nil];
+        [self.delegate displayNewReceipt:self.receipt];
+    }
+    
+}
+
+- (IBAction)cancelReceipt:(UIButton *)sender {
+    
 }
 
 @end

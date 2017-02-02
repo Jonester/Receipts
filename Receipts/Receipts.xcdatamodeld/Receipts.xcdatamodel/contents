@@ -2,7 +2,8 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
     <entity name="Receipt" representedClassName="Receipt" syncable="YES" codeGenerationType="class">
         <attribute name="amount" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="receiptDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="receiptName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="timeStamp" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <relationship name="tag" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="receipt" inverseEntity="Tag" syncable="YES"/>
     </entity>
@@ -11,7 +12,7 @@
         <relationship name="receipt" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Receipt" inverseName="tag" inverseEntity="Receipt" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Receipt" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Receipt" positionX="-90" positionY="-45" width="128" height="118"/>
         <element name="Tag" positionX="142" positionY="66" width="128" height="73"/>
     </elements>
 </model>

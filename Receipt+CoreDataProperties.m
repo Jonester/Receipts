@@ -16,8 +16,9 @@
 }
 
 @dynamic amount;
-@dynamic note;
+@dynamic receiptDescription;
 @dynamic timeStamp;
+@dynamic receiptName;
 @dynamic tag;
 
 @end

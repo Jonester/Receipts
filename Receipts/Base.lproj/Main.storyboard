@@ -89,8 +89,11 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="cancelReceipt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FkO-6U-Ysu"/>
+                                </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="28" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oee-Hk-Mp5">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="28" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oee-Hk-Mp5">
                                 <rect key="frame" x="186" y="68" width="181" height="183"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -143,11 +146,15 @@
                     </view>
                     <connections>
                         <outlet property="categoryTable" destination="Oee-Hk-Mp5" id="pmb-JU-f2q"/>
+                        <outlet property="datePicker" destination="6nF-LD-qQy" id="NHF-EN-uyG"/>
+                        <outlet property="receiptDate" destination="6nF-LD-qQy" id="JZG-v0-1bf"/>
+                        <outlet property="receiptDescription" destination="lZE-RP-0aY" id="xFU-h2-AGw"/>
+                        <outlet property="receiptName" destination="5h1-hy-MU0" id="h8e-pP-eTg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="843" y="139"/>
+            <point key="canvasLocation" x="927" y="139"/>
         </scene>
         <!--List Table View Controller-->
         <scene sceneID="aP6-FC-7k0">
@@ -200,7 +207,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XKF-eZ-sfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="268" y="139"/>
+            <point key="canvasLocation" x="164" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I4Z-kN-T14">
@@ -218,7 +225,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wz6-By-Gao" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-319.19999999999999" y="138.98050974512745"/>
+            <point key="canvasLocation" x="-583" y="139"/>
         </scene>
     </scenes>
 </document>

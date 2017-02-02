@@ -9,6 +9,7 @@
 
 #import "Tag+CoreDataClass.h"
 #import "Receipt+CoreDataClass.h"
+
 @implementation Tag
 
 @end

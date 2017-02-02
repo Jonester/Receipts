@@ -7,10 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Receipt+CoreDataClass.h"
+
+@protocol NewReceiptDelegate <NSObject>
+
+-(void)displayNewReceipt: (Receipt *)newReceipt;
+
+@end
 
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) NSManagedObjectContext *receiptContext;
+@property (strong, nonatomic) Receipt *receipt;
+@property (strong, nonatomic) id<NewReceiptDelegate>delegate;
+
 
 @end
 
