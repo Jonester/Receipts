@@ -14,6 +14,10 @@
 		3CF6D20A1E43970500672485 /* Receipts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6D2081E43970500672485 /* Receipts.xcdatamodeld */; };
 		3CF6D20C1E43970500672485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF6D20B1E43970500672485 /* Assets.xcassets */; };
 		3CF6D20F1E43970500672485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF6D20D1E43970500672485 /* LaunchScreen.storyboard */; };
+		3CF6D21F1E43BBAA00672485 /* Receipt+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6D2191E43BBAA00672485 /* Receipt+CoreDataProperties.m */; };
+		3CF6D2211E43BBAA00672485 /* Tag+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6D21D1E43BBAA00672485 /* Tag+CoreDataProperties.m */; };
+		3CF6D2241E43BD7C00672485 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6D2231E43BD7C00672485 /* ListTableViewController.m */; };
+		3CF6D2271E43C95C00672485 /* ReceiptTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6D2261E43C95C00672485 /* ReceiptTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,18 @@
 		3CF6D20B1E43970500672485 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CF6D20E1E43970500672485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CF6D2101E43970500672485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF6D2161E43BBAA00672485 /* Receipt+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Receipt+CoreDataClass.h"; sourceTree = "<group>"; };
+		3CF6D2171E43BBAA00672485 /* Receipt+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Receipt+CoreDataClass.m"; sourceTree = "<group>"; };
+		3CF6D2181E43BBAA00672485 /* Receipt+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Receipt+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3CF6D2191E43BBAA00672485 /* Receipt+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Receipt+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3CF6D21A1E43BBAA00672485 /* Tag+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tag+CoreDataClass.h"; sourceTree = "<group>"; };
+		3CF6D21B1E43BBAA00672485 /* Tag+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tag+CoreDataClass.m"; sourceTree = "<group>"; };
+		3CF6D21C1E43BBAA00672485 /* Tag+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tag+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3CF6D21D1E43BBAA00672485 /* Tag+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tag+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3CF6D2221E43BD7C00672485 /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		3CF6D2231E43BD7C00672485 /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
+		3CF6D2251E43C95C00672485 /* ReceiptTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptTableViewCell.h; sourceTree = "<group>"; };
+		3CF6D2261E43C95C00672485 /* ReceiptTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +60,14 @@
 		3CF6D1F01E43970500672485 = {
 			isa = PBXGroup;
 			children = (
+				3CF6D2161E43BBAA00672485 /* Receipt+CoreDataClass.h */,
+				3CF6D2171E43BBAA00672485 /* Receipt+CoreDataClass.m */,
+				3CF6D2181E43BBAA00672485 /* Receipt+CoreDataProperties.h */,
+				3CF6D2191E43BBAA00672485 /* Receipt+CoreDataProperties.m */,
+				3CF6D21A1E43BBAA00672485 /* Tag+CoreDataClass.h */,
+				3CF6D21B1E43BBAA00672485 /* Tag+CoreDataClass.m */,
+				3CF6D21C1E43BBAA00672485 /* Tag+CoreDataProperties.h */,
+				3CF6D21D1E43BBAA00672485 /* Tag+CoreDataProperties.m */,
 				3CF6D1FB1E43970500672485 /* Receipts */,
 				3CF6D1FA1E43970500672485 /* Products */,
 			);
@@ -64,11 +88,11 @@
 				3CF6D2001E43970500672485 /* AppDelegate.m */,
 				3CF6D2021E43970500672485 /* ViewController.h */,
 				3CF6D2031E43970500672485 /* ViewController.m */,
+				3CF6D2221E43BD7C00672485 /* ListTableViewController.h */,
+				3CF6D2231E43BD7C00672485 /* ListTableViewController.m */,
+				3CF6D2251E43C95C00672485 /* ReceiptTableViewCell.h */,
+				3CF6D2261E43C95C00672485 /* ReceiptTableViewCell.m */,
 				3CF6D2051E43970500672485 /* Main.storyboard */,
-				3CF6D20B1E43970500672485 /* Assets.xcassets */,
-				3CF6D20D1E43970500672485 /* LaunchScreen.storyboard */,
-				3CF6D2101E43970500672485 /* Info.plist */,
-				3CF6D2081E43970500672485 /* Receipts.xcdatamodeld */,
 				3CF6D1FC1E43970500672485 /* Supporting Files */,
 			);
 			path = Receipts;
@@ -77,6 +101,10 @@
 		3CF6D1FC1E43970500672485 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3CF6D20B1E43970500672485 /* Assets.xcassets */,
+				3CF6D20D1E43970500672485 /* LaunchScreen.storyboard */,
+				3CF6D2101E43970500672485 /* Info.plist */,
+				3CF6D2081E43970500672485 /* Receipts.xcdatamodeld */,
 				3CF6D1FD1E43970500672485 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -153,7 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CF6D2271E43C95C00672485 /* ReceiptTableViewCell.m in Sources */,
+				3CF6D21F1E43BBAA00672485 /* Receipt+CoreDataProperties.m in Sources */,
 				3CF6D20A1E43970500672485 /* Receipts.xcdatamodeld in Sources */,
+				3CF6D2211E43BBAA00672485 /* Tag+CoreDataProperties.m in Sources */,
+				3CF6D2241E43BD7C00672485 /* ListTableViewController.m in Sources */,
 				3CF6D2041E43970500672485 /* ViewController.m in Sources */,
 				3CF6D2011E43970500672485 /* AppDelegate.m in Sources */,
 				3CF6D1FE1E43970500672485 /* main.m in Sources */,
